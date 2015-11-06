@@ -11,15 +11,15 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter ADDR_HEX             = 32'hF0000000;
   parameter ADDR_LEDR            = 32'hF0000004;
   parameter ADDR_LEDG            = 32'hF0000008;
- 
+
 
   parameter DBITS         				 = 32;
   parameter INST_BIT_WIDTH				 = 32;
   parameter START_PC       			   = 32'd0;
   parameter REG_INDEX_BIT_WIDTH 	 = 4;
- 
+
   parameter IMEM_INIT_FILE				 = "Test2.mif";
-  
+
   parameter IMEM_ADDR_BIT_WIDTH 		 = 11;
   parameter IMEM_DATA_BIT_WIDTH 		 = INST_BIT_WIDTH;
   parameter TRUE_DMEM_ADDR_BIT_WIDTH = 11;
@@ -27,7 +27,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter DMEM_DATA_BIT_WIDTH      = INST_BIT_WIDTH;
   parameter IMEM_PC_BITS_HI     		 = IMEM_ADDR_BIT_WIDTH + 2;
   parameter IMEM_PC_BITS_LO     		 = 2;
-  
+
   //PLL, clock genration, and reset generation
   wire clk, lock;
   PLL	PLL_inst (.inclk0 (CLOCK_50),.c0 (clk),.locked (lock));
@@ -41,7 +41,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   wire [15:0] hex;
   wire [IMEM_DATA_BIT_WIDTH - 1 : 0] instWord;
   wire [DBITS - 1 : 0] pcIn, pcOut, incrementedPC, pcAdderOut, aluOut, signExtImm, dataMuxOut, sr1Out, sr2Out, aluMuxOut, memDataOut;
-  
+
   // Create PCMUX
   Mux3to1 #(DBITS) pcMux (
     .sel({jal, (branch & aluOut[0])}),
@@ -59,13 +59,13 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
     .dataIn(pcIn),
     .dataOut(pcOut)
   );
-  
+
   // Create PC Increament (PC + 4)
   PCIncrement pcIncrement (
     .dIn(pcOut),
     .dOut(incrementedPC)
   );
-  
+
   // Create Instruction Memory
   InstMemory #(IMEM_INIT_FILE, IMEM_ADDR_BIT_WIDTH, IMEM_DATA_BIT_WIDTH) instMemory (
     .addr(pcOut[IMEM_PC_BITS_HI - 1 : IMEM_PC_BITS_LO]),
@@ -78,7 +78,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
     .aluControl(aluControl),
     .memtoReg(memtoReg),
     .memWrite(memWrite),
-    .branch(branch), 
+    .branch(branch),
     .jal(jal),
     .alusrc(alusrc),
     .regWrite(regWrite)
@@ -125,7 +125,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
     .op2(aluControl[3:0]),
     .dOut(aluOut)
   );
-  
+
   // Create DataMemory
   DataMemory #(IMEM_INIT_FILE, DMEM_ADDR_BIT_WIDTH, DMEM_DATA_BIT_WIDTH, TRUE_DMEM_ADDR_BIT_WIDTH) dataMemory (
     .clk(clk),
@@ -148,7 +148,7 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
     .dInSrc3(incrementedPC),
     .dOut(dataMuxOut)
   );
-  
+
   // Create SevenSeg for HEX3
   SevenSeg sevenSeg3 (
     .dIn(hex[15:12]),
@@ -175,5 +175,5 @@ module Project2(SW,KEY,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 
   assign LEDR = ledr;
   assign LEDG = ledg;
-  
+
 endmodule
