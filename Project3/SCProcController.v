@@ -18,9 +18,9 @@ module SCProcController(opcode, aluControl, memtoReg, memWrite, branch, jal, alu
 			if (opcode[5]) ctrl <= {opcode, 6'b000111};			// JAL
 			else if (opcode[6]) ctrl <= {opcode, 6'b010010};	// SW
 			else ctrl <= {opcode, 6'b100011};						// LW
-		end else if (opcode[7]) ctrl <= {opcode, 6'b000011};	// ALUI, CMPI
+		end else if (opcode[7]) ctrl <= {opcode, 6'b000011};	// ALUI, CMPI 
 		else if (opcode[6])	ctrl <= {opcode, 6'b001000};		// BCOND
-		else ctrl <= {opcode, 6'b000001};							// ALUR, CMPR
+		else ctrl <= {opcode, 6'b000001};							// ALUR, CMPR 
 	end
 
 endmodule

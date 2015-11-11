@@ -1,0 +1,320 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\yoeli\Desktop\CS3220 Project 2\simulation\modelsim
+vALU
+IKL<A9Aj;iBMhAzHf5TN2=3
+VIY4kTo8@n2X0JdnJ5MX4C1
+Z1 dC:\Users\yoeli\Desktop\CS3220 Project 2\simulation\modelsim
+Z2 w1445533464
+8C:/Users/yoeli/Desktop/CS3220 Project 2/ALU.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/ALU.v
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2} -O0
+n@a@l@u
+!i10b 1
+!s100 k^CB;^;040Yk9zae26g4G2
+!s85 0
+!s108 1447228436.106000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/ALU.v|
+!s101 -O0
+vDataMemory
+IiG?WdDIMQ0@;NKKV95Jhe1
+VA5Y7QmIWABh;VG=0FnQPB0
+R1
+w1445700544
+8C:/Users/yoeli/Desktop/CS3220 Project 2/DataMemory.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/DataMemory.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@data@memory
+!i10b 1
+!s100 82@QC_jJb_KG0j7Y[EDhm1
+!s85 0
+!s108 1447228436.169000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/DataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/DataMemory.v|
+!s101 -O0
+vForwardingUnit
+Ig4z?hVG>OSAUWZJXieFeP2
+VK3E^k?c^FinT=_:jBa:PW3
+R1
+w1447224529
+8C:/Users/yoeli/Desktop/CS3220 Project 2/ForwardingUnit.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/ForwardingUnit.v
+L0 1
+R3
+r1
+31
+R4
+n@forwarding@unit
+R5
+!i10b 1
+!s100 Jbbe9I_3gO8k;=afzJgN;2
+!s85 0
+!s108 1447228435.841000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/ForwardingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/ForwardingUnit.v|
+!s101 -O0
+vInstMemory
+INfB5YQ?E1>3458BOa1OM70
+VUJYb>IZO9F_mPNHYd`^832
+R1
+w1445539358
+8C:/Users/yoeli/Desktop/CS3220 Project 2/InstMemory.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/InstMemory.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@inst@memory
+!i10b 1
+!s100 h`BmaMhN3XA_D29ooO91J0
+!s85 0
+!s108 1447228436.237000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/InstMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/InstMemory.v|
+!s101 -O0
+vMux2to1
+ITJR?9G;jHJbcomSzKXJ:j1
+VS>^Vj[>3Jh`BcTXgdhn3^1
+R1
+R2
+8C:/Users/yoeli/Desktop/CS3220 Project 2/Mux2to1.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/Mux2to1.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@mux2to1
+!i10b 1
+!s100 <@dfYLe0B74leYKdB_Jl12
+!s85 0
+!s108 1447228436.303000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/Mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/Mux2to1.v|
+!s101 -O0
+vMux3to1
+IVldceg_;VJa:Sh256zWNQ0
+VlAQ2zXKbZG5eL6DKG6Ti]3
+R1
+R2
+8C:/Users/yoeli/Desktop/CS3220 Project 2/Mux3to1.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/Mux3to1.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@mux3to1
+!i10b 1
+!s100 5]`hA_m`LIK249_0;>B0G2
+!s85 0
+!s108 1447228436.368000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/Mux3to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/Mux3to1.v|
+!s101 -O0
+vPCAdder
+IlZ?]o<DCWkNBkoG]9B8Lf1
+V7947d^EH64=dlh<=FQe?D2
+R1
+R2
+8C:/Users/yoeli/Desktop/CS3220 Project 2/PCAdder.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/PCAdder.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@p@c@adder
+!i10b 1
+!s100 =GahLfK`UJ`C`4Pf`QQQ90
+!s85 0
+!s108 1447228436.436000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/PCAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/PCAdder.v|
+!s101 -O0
+vPCIncrement
+Im7M]>CUMmmdYD[HCd1>mN2
+VEF3T_HaVB^aohYQgTCD9[0
+R1
+R2
+8C:/Users/yoeli/Desktop/CS3220 Project 2/PCIncrement.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/PCIncrement.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@p@c@increment
+!i10b 1
+!s100 X]2a:l;@;?S5E4>:EEhi<1
+!s85 0
+!s108 1447228436.507000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/PCIncrement.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/PCIncrement.v|
+!s101 -O0
+vProcTest
+!i10b 1
+!s100 c[Neg;B3DVk`oVM_F3JF11
+IS0ca_UCV90IfDGC=KgZ_c2
+V>01jFz1@1N0io2LR?oz621
+R1
+w1447228421
+8C:/Users/yoeli/Desktop/CS3220 Project 2/ProcTest.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/ProcTest.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1447228436.794000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/ProcTest.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/ProcTest.v|
+!s101 -O0
+R4
+R5
+n@proc@test
+vProject2
+I5O:32z2^]8>5zb8YWzomf0
+V3YDXm;j6BmnTKWfXOzQ0F1
+R1
+w1447227884
+8C:/Users/yoeli/Desktop/CS3220 Project 2/Project2.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/Project2.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@project2
+!i10b 1
+!s100 [P<UDLmBBOYlH0Xl`oa7M3
+!s85 0
+!s108 1447228435.903000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/Project2.v|
+!s101 -O0
+vRegister
+IfZZP`GG^;CA;SH3LKAZe91
+VcF=KTBfmNkUbE2U153[EE2
+R1
+Z6 w1445533466
+8C:/Users/yoeli/Desktop/CS3220 Project 2/Register.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/Register.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@register
+!i10b 1
+!s100 HQhn=RTKl8VHhb_NA;G7@2
+!s85 0
+!s108 1447228436.578000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/Register.v|
+!s101 -O0
+vRegisterFile
+Iklc2]R4`lk_:?2DB>iO;G0
+V0[Vh0R[DV9ll7MLUa??MB3
+R1
+R6
+8C:/Users/yoeli/Desktop/CS3220 Project 2/RegisterFile.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/RegisterFile.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@register@file
+!i10b 1
+!s100 He4DZLJVmJPE=J14D_gIf2
+!s85 0
+!s108 1447228436.646000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/RegisterFile.v|
+!s101 -O0
+vSCProcController
+IaR6GIn@XV9MkAOg;Qal9Z2
+VKLS;XF`C^=WzS8D;Xck@M3
+R1
+R6
+8C:/Users/yoeli/Desktop/CS3220 Project 2/SCProcController.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/SCProcController.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@c@proc@controller
+!i10b 1
+!s100 =J8D8Oh:I[R;oa;5oi9RF0
+!s85 0
+!s108 1447228436.720000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/SCProcController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/SCProcController.v|
+!s101 -O0
+vSevenSeg
+I?7IUOJl>I4CS@S`[c?YNC2
+VKZQ;?2zCF>`gI56YS>C7c1
+R1
+R6
+8C:/Users/yoeli/Desktop/CS3220 Project 2/SevenSeg.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/SevenSeg.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@seven@seg
+!i10b 1
+!s100 X1NUO5m>P7G1Dd>_Y0n`V2
+!s85 0
+!s108 1447228435.982000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/SevenSeg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/SevenSeg.v|
+!s101 -O0
+vSignExtension
+I5Fgoc2P]8Hz__9^?C;=z20
+VjjMXQ2A_@M;USO7=KT?Vh1
+R1
+R6
+8C:/Users/yoeli/Desktop/CS3220 Project 2/SignExtension.v
+FC:/Users/yoeli/Desktop/CS3220 Project 2/SignExtension.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@sign@extension
+!i10b 1
+!s100 `WLMm:kgJ4>X@JNB8L:BX0
+!s85 0
+!s108 1447228436.044000
+!s107 C:/Users/yoeli/Desktop/CS3220 Project 2/SignExtension.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/yoeli/Desktop/CS3220 Project 2|C:/Users/yoeli/Desktop/CS3220 Project 2/SignExtension.v|
+!s101 -O0

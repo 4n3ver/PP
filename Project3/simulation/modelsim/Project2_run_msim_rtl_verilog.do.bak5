@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/ForwardingUnit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/Project2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/SevenSeg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/SignExtension.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/ALU.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/DataMemory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/InstMemory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/Mux2to1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/Mux3to1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/PCAdder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/PCIncrement.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/Register.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/RegisterFile.v}
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/SCProcController.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/yoeli/Desktop/CS3220\ Project\ 2 {C:/Users/yoeli/Desktop/CS3220 Project 2/ProcTest.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  ProcTest
+
+add wave *
+view structure
+view signals
+run -all
